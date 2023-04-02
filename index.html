@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- Daisyui Link________________________________________________-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css" rel="stylesheet" type="text/css" />
+
+
+    <!-- Tailwind css Link___________________________________________ -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
+
+
+    <!-- fontawesome___________________ -->
+    <script src="https://kit.fontawesome.com/cfa78000ac.js" crossorigin="anonymous"></script>
+
+    <style>
+        .align{
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container mx-auto">
+
+        <!-- Navbar START__________________________________________ -->
+
+        <div class="navbar bg-base-100 ">
+            <div class="navbar-start flex justify-between ">
+                <div class="dropdown">
+                    <label for="my-modal-3" tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+
+
+                    <!-- Modal part for small screen____________________________ -->
+                    <input type="checkbox" id="my-modal-3" class="modal-toggle" />
+                    <div class="modal">
+                        <div class="modal-box relative">
+                            <label for="my-modal-3" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                            <div class="text-center">
+                                <a class="  text-base font-medium text-[#003777]" href="">HOME</a>
+
+                                <!-- collapse part start_________________________ -->
+                                <div tabindex="0" class="collapse collapse-plus  bg-base-200 rounded-box">
+                                    <div class="collapse-title font-medium text-base text-[#003777]">
+                                        ABOUT US
+                                    </div>
+                                    <div class="collapse-content">
+                                        <p class="font-medium text-base text-[#003777] mt-4"><a href="">At a Glance</a>
+                                        </p>
+                                        <p class="font-medium text-base text-[#003777] mt-4"><a href="">HISTORY OF
+                                                DPI</a></p>
+                                        <p class="font-medium text-base text-[#003777] mt-4"><a href="">Mission And
+                                                Vision</a></p>
+                                        <p class="font-medium text-base text-[#003777] mt-4"><a href="">Photo
+                                                Gallery</a></p>
+                                        <p class="font-medium text-base text-[#003777] mt-4"><a href="">Citizen
+                                                Charter</a></p>
+                                    </div>
+                                </div>
+
+
+                                <div tabindex="0" class="collapse collapse-plus  bg-base-200 rounded-box">
+                                    <div class="collapse-title font-medium text-base text-[#003777]">
+                                        ADMISSION
+                                    </div>
+                                    <div class="collapse-content">
+                                        <p class="font-medium text-base text-[#003777] mt-4">Online Admission</p>
+                                        <p class="font-medium text-base text-[#003777] mt-4">How to Apply For Online
+                                            Admission </p>
+                                        <p class="font-medium text-base text-[#003777] mt-4">Admission Circular</p>
+                                        <p class="font-medium text-base text-[#003777] mt-4">Campus Life</p>
+                                        <p class="font-medium text-base text-[#003777] mt-4">Our Facilities</p>
+                                        <p class="font-medium text-base text-[#003777] mt-4">Tuition Fees</p>
+                                        <p class="font-medium text-base text-[#003777] mt-4">Admission Requirement</p>
+                                        <p class="font-medium text-base text-[#003777] mt-4">Brochure</p>
+                                    </div>
+                                </div>
+
+
+
+                                <div tabindex="0" class="collapse collapse-plus  bg-base-200 rounded-box">
+                                    <div class="collapse-title font-medium text-base text-[#003777]">
+                                        DEPARTMENTS
+                                    </div>
+                                    <div class="collapse-content">
+                                        <p class="font-medium text-base text-[#003777] mt-4">Computer Engineering</p>
+                                        <p class="font-medium text-base text-[#003777] mt-4">Civil Engineering</p>
+                                        <p class="font-medium text-base text-[#003777] mt-4">Electrical Engineering</p>
+                                        <p class="font-medium text-base text-[#003777] mt-4">Architecture Engineering
+                                        </p>
+                                        <p class="font-medium text-base text-[#003777] mt-4">Telecommunication
+                                            Engineering</p>
+                                        <p class="font-medium text-base text-[#003777] mt-4">Garments Design And Pattern
+                                            Making</p>
+                                        <p class="font-medium text-base text-[#003777] mt-4">Textile Engineering</p>
+                                        <p class="font-medium text-base text-[#003777] mt-4">Graphics Design</p>
+                                    </div>
+                                </div>
+
+
+                                <div tabindex="0" class="collapse collapse-plus  bg-base-200 rounded-box">
+                                    <div class="collapse-title font-medium text-base text-[#003777]">
+                                        ACADEMIC
+                                    </div>
+                                    <div class="collapse-content">
+                                        <p class="font-medium text-base text-[#003777] mt-4">Notice Board</p>
+                                        <p class="font-medium text-base text-[#003777] mt-4">News</p>
+
+                                        <div tabindex="0" class="collapse collapse-plus  bg-base-100 rounded-box">
+                                            <div class="collapse-title font-medium text-base text-[#003777]">
+                                                Events
+                                            </div>
+                                            <div class="font-medium text-base text-[#003777] mt-4">
+                                                <p> Daily Science (বিজ্ঞান প্রতিদিন)</p>
+                                            </div>
+                                        </div>
+
+                                        <p class="font-medium text-base text-[#003777] mt-4">Student Portal</p>
+                                        <div tabindex="0" class="collapse collapse-plus  bg-base-100 rounded-box">
+                                            <div class="collapse-title font-medium text-base text-[#003777]">
+                                                Resources
+                                            </div>
+                                            <div class="font-medium text-base text-[#003777] mt-4">
+                                                <p> Student Support Service</p>
+                                            </div>
+                                        </div>
+                                        <p class="font-medium text-base text-[#003777] mt-4">Student Routine</p>
+                                        <p class="font-medium text-base text-[#003777] mt-4">Result</p>
+                                        <p class="font-medium text-base text-[#003777] mt-4">Course Structure And
+                                            Syllabus</p>
+                                        <p class="font-medium text-base text-[#003777] mt-4">Job Placement Cell</p>
+                                    </div>
+                                </div>
+
+
+
+                                <div tabindex="0" class="collapse collapse-plus  bg-base-200 rounded-box">
+                                    <div class="collapse-title font-medium text-base text-[#003777]">
+                                        ADMINISTRATION
+                                    </div>
+                                    <div class="collapse-content">
+                                        <div tabindex="0" class="collapse collapse-plus  bg-base-100 rounded-box">
+                                            <div class="collapse-title font-medium text-base text-[#003777]">
+                                                Employees
+                                            </div>
+                                            <div class="font-medium text-base text-[#003777] mt-4">
+                                                <p class="mt-4"> Administrative</p>
+                                                <p class="mt-4"> Faculty Member's</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div tabindex="0" class="collapse collapse-plus  bg-base-200 rounded-box">
+                                    <div class="collapse-title font-medium text-base text-[#003777]">
+                                        BLOGS
+                                    </div>
+                                    <div class="collapse-content">
+                                        <p class="font-medium text-base text-[#003777] mt-4">Blog</p>
+                                        <p class="font-medium text-base text-[#003777] mt-4">Article</p>
+                                    </div>
+                                </div>
+
+
+
+                                <div tabindex="0" class="collapse collapse-plus  bg-base-200 rounded-box">
+                                    <div class="collapse-title font-medium text-base text-[#003777]">
+                                        CONTACT
+                                    </div>
+                                    <div class="collapse-content">
+                                        <p class="font-medium text-base text-[#003777] mt-4">Career</p>
+                                        <p class="font-medium text-base text-[#003777] mt-4">Campus Address</p>
+                                        <p class="font-medium text-base text-[#003777] mt-4">Virtual Campus</p>
+                                    </div>
+                                </div>
+                                <!-- collapse part END_________________________ -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal part for small screen____________________________ -->
+
+
+                </div>
+
+
+                <div class="">
+                    <img src="./assets/park-polytecnic.jpg" alt="" class="w-20 h-20">
+                </div>
+
+
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a class="text-sm font-semibold text-[#003777]">HOME</a></li>
+                    <li tabindex="0" class="text-sm font-semibold text-[#003777]">
+                        <a>
+                            ABOUT US
+                            <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24">
+                                <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+                            </svg>
+                        </a>
+                        <ul class="p-3 bg-base-200 ">
+                            <li><a href="">At a Glance</a></li>
+                            <li><a href="">HISTORY OF DPI</a></li>
+                            <li><a href="">Mission And Vision</a></li>
+                            <li><a href="">Photo Gallery</a></li>
+                            <li><a href="">Citizen Charter</a></li>
+
+
+                        </ul>
+                    </li>
+
+                    <li tabindex="0" class="text-sm font-semibold text-[#003777]">
+                        <a>
+                            ADMISSION
+                            <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24">
+                                <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+                            </svg>
+                        </a>
+                        <ul class="p-3 bg-base-200 ">
+                            <li><a>Online Admission</a></li>
+                            <li><a>How to Apply For Online
+                                    Admission</a></li>
+                            <li><a>Admission Circular</a></li>
+                            <li><a>Campus Life</a></li>
+                            <li><a>Our Facilities</a></li>
+                            <li><a>Tuition Fees</a></li>
+                            <li><a>Admission Requirement</a></li>
+                            <li><a>Brochure</a></li>
+                        </ul>
+                    </li>
+
+                    <li tabindex="0" class="text-sm font-semibold text-[#003777]">
+                        <a>
+                            DEPARTMENTS
+                            <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24">
+                                <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+                            </svg>
+                        </a>
+                        <ul class="p-3 bg-base-200 ">
+                            <li><a>Computer Engineering</a></li>
+                            <li><a>Civil Engineering</a></li>
+                            <li><a>Electrical Engineering</a></li>
+                            <li><a>Architecture Engineering</a></li>
+                            <li><a>Telecommunication Engineering</a></li>
+                            <li><a>Garments Design And Pattern Making</a></li>
+                            <li><a>Textile Engineering</a></li>
+                            <li><a>Graphics Design</a></li>
+                        </ul>
+                    </li>
+
+                    <li tabindex="0" class="text-sm font-semibold text-[#003777]">
+                        <a>
+                            ACADEMIC
+                            <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24">
+                                <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+                            </svg>
+                        </a>
+                        <ul class="p-3 bg-base-200">
+                            <li><a>Notice Board</a></li>
+                            <li><a>News</a></li>
+                            <li tabindex="1" class="text-sm font-semibold text-[#003777]">
+                                <a>
+                                    Events
+                                    <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                        viewBox="0 0 24 24">
+                                        <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+                                    </svg>
+                                </a>
+                                <ul class="p-2">
+                                    <li><a>Daily Science (বিজ্ঞান প্রতিদিন)</a></li>
+                                    
+                                </ul>
+                            </li>
+                            <li><a>Student Portal</a></li>
+                            <li tabindex="1" class="text-sm font-semibold text-[#003777]">
+                                <a>
+                                    Resources
+                                    <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                        viewBox="0 0 24 24">
+                                        <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+                                    </svg>
+                                </a>
+                                <ul class="p-2">
+                                    <li><a>Student Support Service</a></li>
+                                    
+                                </ul>
+                            </li>
+                            <li><a>Student Routine</a></li>
+                            <li><a>Result</a></li>
+                            <li><a>Course Structure And
+                                Syllabus</a></li>
+                            <li><a>Job Placement Cell</a></li>
+                        </ul>
+                    </li>
+
+
+
+                    <li tabindex="0" class="text-sm font-semibold text-[#003777]">
+                        <a>
+                            ADMINISTRATION
+                            <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24">
+                                <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+                            </svg>
+                        </a>
+                        <ul class="p-3 bg-base-200">
+                            <li tabindex="0" class="text-sm font-semibold text-[#003777]">
+                                <a>
+                                    Employees
+                                    <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                        viewBox="0 0 24 24">
+                                        <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+                                    </svg>
+                                </a>
+                                <ul class="p-3 bg-base-200">
+                                    <li><a>Administrative</a></li>
+                                    <li><a>Faculty Member</a></li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                    </li>
+
+
+                    <li tabindex="0" class="text-sm font-semibold text-[#003777]">
+                        <a>
+                            BLOGS
+                            <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24">
+                                <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+                            </svg>
+                        </a>
+                        <ul class="p-3 bg-base-200">
+                            <li><a>Submenu 1</a></li>
+                            <li><a>Submenu 2</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li tabindex="0" class="text-sm font-semibold text-[#003777]">
+                        <a>
+                            CONTACT
+                            <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24">
+                                <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+                            </svg>
+                        </a>
+                        <ul class="p-3 bg-base-200">
+                            <li><a>Submenu 1</a></li>
+                            <li><a>Submenu 2</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+                <div class="flex gap-1">
+                    <img src="./assets/facebook.png" alt="" class="w-6 h-6">
+                    <img src="./assets/youtube.png" alt="" class="w-6 h-6">
+                    <img src="./assets/twitter.png" alt="" class="w-6 h-6">
+                    <img src="./assets/instagram.png" alt="" class="w-6 h-6">
+                    <img src="./assets/linkedin.png" alt="" class="w-6 h-6">
+                </div>
+            </div>
+
+        </div>
+        <!-- Navbar END____________________________________________ -->
+
+
+
+        <!-- Banner Part START_________________________________________ -->
+        <div class="mt-5">
+            <img src="./assets/dpi.jpg" alt="" class="rounded-sm">
+        </div>
+        <!-- Banner Part END_________________________________________ -->
+
+
+
+
+
+        <!-- Welcome to Daffodil section START_____________________________________ -->
+
+        <div class="grid lg:grid-cols-3 grid-cols-1 justify-items-center lg:px-20 px-10 gap-5  mt-16 mb-10">
+            <div class="text-3xl font-bold ">
+                <h2>Welcome To Daffodil  Polytechnic Institute</h2>
+            </div>
+
+            <div class="col-span-2  text-lg align">
+                <p class="mb-4"><strong>DPI</strong> is the <strong>Best polytechnic institute in Dhaka</strong>, Bangladesh for Developing skilled Engineers in different sectors. Daffodil Polytechnic is a very well-known institute for science, engineering, art study, and also for professional and leadership development training programs. </p>
+
+                <a href="https://www.google.com/" class="text-blue-600 ">Institute Overview</a>
+            </div>
+        </div>
+        <!-- Welcome to Daffodil section START_____________________________________ -->
+
+
+
+
+
+
+        <!-- Our Department Part START_____________________________________________ -->
+        <div class="mt-40">
+            <h1 class="text-center lg:text-4xl text-3xl  font-bold text-[#ff0000] mb-10">Our Department</h1>
+
+
+            <!-- IMage section START_______________________________ -->
+            <div class="grid lg:grid-cols-5 grid-cols-1 justify-items-center gap-3  ">
+                <div>
+                    <img src="https://dpi.ac/wp-content/uploads/2022/01/CSE-dept.jpg" alt="" class="rounded-2xl">
+                </div>
+
+                <div>
+                    <img src="http://dpi.ac/wp-content/uploads/2022/01/Electrical.jpg" alt="" class="rounded-2xl">
+                </div>
+
+                <div>
+                    <img src="http://dpi.ac/wp-content/uploads/2022/01/Telecommunication.jpg" alt="" class="rounded-2xl">
+                </div>
+
+                <div>
+                    <img src="http://dpi.ac/wp-content/uploads/2022/01/Textile.jpg" alt="" class="rounded-2xl">
+                </div>
+
+                <div>
+                    <img src="http://dpi.ac/wp-content/uploads/2022/01/Civil.jpg" alt="" class="rounded-2xl">
+                </div>
+
+                <div>
+                    <img src="http://dpi.ac/wp-content/uploads/2022/01/Architecture.jpg" alt="" class="rounded-2xl">
+                </div>
+
+                <div>
+                    <img src="http://dpi.ac/wp-content/uploads/2022/01/GDPM.jpg" alt="" class="rounded-2xl">
+                </div>
+
+                <div>
+                    <img src="http://dpi.ac/wp-content/uploads/2022/01/Graphics-Design.jpg" alt="" class="rounded-2xl">
+                </div>
+
+                <div>
+                    <img src="http://dpi.ac/wp-content/uploads/2022/01/auto.jpg" alt="" class="rounded-2xl">
+                </div>
+
+                <div>
+                    <img src="http://dpi.ac/wp-content/uploads/2022/01/mechanical.jpg" alt="" class="rounded-2xl">
+                </div>
+            </div>
+            <!-- IMage section END_______________________________ -->
+        </div>
+
+        <!-- Our Department Part END_____________________________________________ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+    <!-- Tailwind CSS JavaScript Code_____________________________________ -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>
