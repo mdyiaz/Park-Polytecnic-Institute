@@ -20,7 +20,7 @@
     <script src="https://kit.fontawesome.com/cfa78000ac.js" crossorigin="anonymous"></script>
 
 
-    <!-- Swipper JS CDN LINK END_____________________________________________ -->
+    <!-- Swipper JS CDN LINK _____________________________________________ -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
 
@@ -35,7 +35,10 @@
         }
 
 
+
        
+
+
         .img-gradient {
             content: '';
             position: absolute;
@@ -44,10 +47,80 @@
             width: 100%;
             height: 100%;
             display: inline-block;
-            background: linear-gradient(180deg,#ff000082 0%,#0020ff75 100%); 
+            background: linear-gradient(180deg, #ff000070 0%, #0020ff75 100%);
         }
 
-       
+        .img-gradient-for-department {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+            background: linear-gradient(180deg, #ff000070 0%, #0020ff75 100%);
+        }
+
+
+        
+
+
+
+        /* swipper-slider CSS START____________________________________________ */
+        .slider {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .swiper {
+            /* width: calc(100% - 20%);
+            height: calc(100vh - 4rem); */
+
+            border-radius: 8px;
+        }
+
+        .swiper-horizontal>.swiper-pagination-bullets,
+        .swiper-pagination-bullets.swiper-pagination-horizontal,
+        .swiper-pagination-custom,
+        .swiper-pagination-fraction {
+            top: 100%;
+        }
+
+        .swiper-slide>img {
+
+            object-fit: cover;
+            object-position: center;
+        }
+
+
+        .swiper-slide {
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .pagination_ {
+            position: absolute;
+            width: calc(100% - 10%);
+        }
+
+        .pagination_ div[class^="swiper-button"]::after {
+            display: none;
+        }
+
+        .pagination_ div[class^="swiper-button"] {
+            width: 45px;
+            height: 45px;
+            border: 1px solid rgb(75, 75, 75);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+        }
+
+        /* swipper-slider CSS END_______________________________________________________________ */
     </style>
 </head>
 
@@ -57,7 +130,7 @@
 
         <!-- Navbar START__________________________________________ -->
 
-        <div class="">
+        <div class="sticky top-0 z-30">
             <nav class="relative px-4 py-2 flex justify-between items-center bg-[#a8ce3b]">
                 <a class="text-3xl font-bold leading-none" href="#">
                     <img src="./assets/park-polytecnic-logo.png" alt="" class="lg:w-20 w-14">
@@ -494,19 +567,22 @@
         <div class="carousel w-full">
             <div id="slide1" class="carousel-item relative w-full ">
                 <div class="img-gradient"></div>
-              <img src="./assets/dpi.jpg" class="w-full" />
-              <div class="absolute   transform -translate-y-1/2 lg:pl-10  lg:top-1/3 top-1/2 text-white lg:text-left text-center">
-                <p class="text-2xl font-bold">Park Polytecnic Institute</p>
-                <p class="lg:text-4xl font-bold lg:mt-2">Best Polytechnic Institute In Dhaka</p>
-                <p class="lg:text-3xl text-sm font-semibold lg:mt-4">গতানুগতিক ধারার বাইরে একটি আধুনিক পলিটেকনিক</p>
+                <img src="./assets/dpi.jpg" class="w-full" />
+                <div
+                    class="absolute   transform -translate-y-1/2 lg:pl-10  lg:top-1/3 top-1/2 text-white lg:text-left text-center">
+                    <p class="text-2xl font-bold">Park Polytecnic Institute</p>
+                    <p class="lg:text-4xl font-bold lg:mt-2">Best Polytechnic Institute In Dhaka</p>
+                    <p class="lg:text-3xl text-sm font-semibold lg:mt-4">গতানুগতিক ধারার বাইরে একটি আধুনিক পলিটেকনিক</p>
 
-                <div class="lg:flex gap-10 lg:mt-8 ">
-                    <button class=" rounded-full bg-[#ed0000] px-4 text-xs py-2 font-semibold">ONLINE ADMISSION</button> 
-                    <button class=" rounded-full bg-[#ed0000] px-4 text-xs py-2 font-semibold ">GRADUATION CEREMONY</button>
+                    <div class="lg:flex gap-10 lg:mt-8 ">
+                        <button class=" rounded-full bg-[#ed0000] px-4 text-xs py-2 font-semibold">ONLINE
+                            ADMISSION</button>
+                        <button class=" rounded-full bg-[#ed0000] px-4 text-xs py-2 font-semibold ">GRADUATION
+                            CEREMONY</button>
+                    </div>
                 </div>
-              </div>
-            </div> 
-          </div>
+            </div>
+        </div>
         <!-- Banner Part END_________________________________________ -->
 
 
@@ -523,11 +599,11 @@
             <div class="col-span-2   align">
 
                 <div class="text-3xl font-bold align-center mb-5 text-black ">
-                    <h2>Welcome To Daffodil Polytechnic Institute</h2>
+                    <h2>Welcome To Park Polytechnic Institute</h2>
                 </div>
 
-                <p class="mb-4 text-lg"><strong>DPI</strong> is the <strong>Best polytechnic institute in
-                        Dhaka</strong>, Bangladesh for Developing skilled Engineers in different sectors. Daffodil
+                <p class="mb-4 text-lg"><strong>PPI</strong> is the <strong>Best polytechnic institute in
+                        Dhaka</strong>, Bangladesh for Developing skilled Engineers in different sectors. Park
                     Polytechnic is a very well-known institute for science, engineering, art study, and also for
                     professional and leadership development training programs. </p>
 
@@ -548,45 +624,215 @@
 
             <!-- IMage section START_______________________________ -->
             <div class="grid lg:grid-cols-5 grid-cols-1 justify-items-center gap-3  ">
-                <div>
-                    <img src="https://dpi.ac/wp-content/uploads/2022/01/CSE-dept.jpg" alt="" class="rounded-2xl">
-                </div>
 
-                <div>
-                    <img src="http://dpi.ac/wp-content/uploads/2022/01/Electrical.jpg" alt="" class="rounded-2xl">
+                <div style="height: 200px; width: 225px; background: no-repeat; background-size: cover;" class="relative">
+                    <div style="height: 100%; width: 100%; position: absolute;
+                    top: 0;
+                    z-index: 1;
+                    background: #ff000052;"></div>
+                    <img src="http://dpi.ac/wp-content/uploads/2022/01/CSE-dept.jpg" alt="" style="height: 100%; width: 100%; position: absolute;
+                    top: 0;">
+                     <div class="text-center text-white" style="    height: fit-content;
+                     width: 100%;
+                     position: absolute;
+                     top: 0;
+                     right: 0;
+                     bottom: 0;
+                     left: 0;
+                     margin: auto;
+                     z-index: 2;">
+                        <i class="fa-solid fa-computer text-3xl"></i>
+                        <p class="lg:text-xl text-lg font-semibold">Computer Science & Technology</p>
+                    </div>
                 </div>
-
-                <div>
-                    <img src="http://dpi.ac/wp-content/uploads/2022/01/Telecommunication.jpg" alt=""
-                        class="rounded-2xl">
+            
+                <div style="height: 200px; width: 225px; background: no-repeat; background-size: cover;" class="relative">
+                    <div style="height: 100%; width: 100%; position: absolute;
+                    top: 0;
+                    z-index: 1;
+                    background: #ff000052;"></div>
+                    <img src="http://dpi.ac/wp-content/uploads/2022/01/Electrical.jpg" alt="" style="height: 100%; width: 100%; position: absolute;
+                    top: 0;">
+                     <div class="text-center text-white" style="    height: fit-content;
+                     width: 100%;
+                     position: absolute;
+                     top: 0;
+                     right: 0;
+                     bottom: 0;
+                     left: 0;
+                     margin: auto;
+                     z-index: 2;">
+                        <i class="fa-solid fa-bolt text-3xl"></i>
+                        <p class="lg:text-xl text-lg font-semibold">Electrical <br> Engineering</p>
+                    </div>
                 </div>
-
-                <div>
-                    <img src="http://dpi.ac/wp-content/uploads/2022/01/Textile.jpg" alt="" class="rounded-2xl">
+            
+                <div style="height: 200px; width: 225px; background: no-repeat; background-size: cover;" class="relative">
+                    <div style="height: 100%; width: 100%; position: absolute;
+                    top: 0;
+                    z-index: 1;
+                    background: #ff000052;"></div>
+                    <img src="http://dpi.ac/wp-content/uploads/2022/01/Telecommunication.jpg" alt="" style="height: 100%; width: 100%; position: absolute;
+                    top: 0;">
+                     <div class="text-center text-white" style="    height: fit-content;
+                     width: 100%;
+                     position: absolute;
+                     top: 0;
+                     right: 0;
+                     bottom: 0;
+                     left: 0;
+                     margin: auto;
+                     z-index: 2;">
+                       <i class="fa-solid fa-tower-broadcast text-3xl"></i>
+                        <p class="lg:text-xl text-lg font-semibold">Telecommunication Engineering</p>
+                    </div>
                 </div>
-
-                <div>
-                    <img src="http://dpi.ac/wp-content/uploads/2022/01/Civil.jpg" alt="" class="rounded-2xl">
+            
+                <div style="height: 200px; width: 225px; background: no-repeat; background-size: cover;" class="relative">
+                    <div style="height: 100%; width: 100%; position: absolute;
+                    top: 0;
+                    z-index: 1;
+                    background: #ff000052;"></div>
+                    <img src="http://dpi.ac/wp-content/uploads/2022/01/Textile.jpg" alt="" style="height: 100%; width: 100%; position: absolute;
+                    top: 0;">
+                     <div class="text-center text-white" style="    height: fit-content;
+                     width: 100%;
+                     position: absolute;
+                     top: 0;
+                     right: 0;
+                     bottom: 0;
+                     left: 0;
+                     margin: auto;
+                     z-index: 2;">
+                        <i class="fa-solid fa-rug text-3xl"></i>
+                        <p class="lg:text-xl text-lg font-semibold">Textile <br> Engineering</p>
+                    </div>
                 </div>
-
-                <div>
-                    <img src="http://dpi.ac/wp-content/uploads/2022/01/Architecture.jpg" alt="" class="rounded-2xl">
+            
+                <div style="height: 200px; width: 225px; background: no-repeat; background-size: cover;" class="relative">
+                    <div style="height: 100%; width: 100%; position: absolute;
+                    top: 0;
+                    z-index: 1;
+                    background: #ff000052;"></div>
+                    <img src="http://dpi.ac/wp-content/uploads/2022/01/Civil.jpg" alt="" style="height: 100%; width: 100%; position: absolute;
+                    top: 0;">
+                     <div class="text-center text-white" style="    height: fit-content;
+                     width: 100%;
+                     position: absolute;
+                     top: 0;
+                     right: 0;
+                     bottom: 0;
+                     left: 0;
+                     margin: auto;
+                     z-index: 2;">
+                        <i class="fa-regular fa-hourglass-half text-3xl"></i>
+                        <p class="lg:text-xl text-lg font-semibold">Civil <br> Engineering</p>
+                    </div>
                 </div>
-
-                <div>
-                    <img src="http://dpi.ac/wp-content/uploads/2022/01/GDPM.jpg" alt="" class="rounded-2xl">
+            
+                <div style="height: 200px; width: 225px; background: no-repeat; background-size: cover;" class="relative">
+                    <div style="height: 100%; width: 100%; position: absolute;
+                    top: 0;
+                    z-index: 1;
+                    background: #ff000052;"></div>
+                    <img src="http://dpi.ac/wp-content/uploads/2022/01/Architecture.jpg" alt="" style="height: 100%; width: 100%; position: absolute;
+                    top: 0;">
+                     <div class="text-center text-white" style="    height: fit-content;
+                     width: 100%;
+                     position: absolute;
+                     top: 0;
+                     right: 0;
+                     bottom: 0;
+                     left: 0;
+                     margin: auto;
+                     z-index: 2;">
+                        <i class="fa-solid fa-house-chimney text-3xl"></i>
+                        <p class="lg:text-xl text-lg font-semibold">Architecture & Interior Design</p>
+                    </div>
                 </div>
-
-                <div>
-                    <img src="http://dpi.ac/wp-content/uploads/2022/01/Graphics-Design.jpg" alt="" class="rounded-2xl">
+            
+                <div style="height: 200px; width: 225px; background: no-repeat; background-size: cover;" class="relative">
+                    <div style="height: 100%; width: 100%; position: absolute;
+                    top: 0;
+                    z-index: 1;
+                    background: #ff000052;"></div>
+                    <img src="http://dpi.ac/wp-content/uploads/2022/01/GDPM.jpg" alt="" style="height: 100%; width: 100%; position: absolute;
+                    top: 0;">
+                     <div class="text-center text-white" style="    height: fit-content;
+                     width: 100%;
+                     position: absolute;
+                     top: 0;
+                     right: 0;
+                     bottom: 0;
+                     left: 0;
+                     margin: auto;
+                     z-index: 2;">
+                       <i class="fa-solid fa-shirt text-3xl"></i>
+                        <p class="lg:text-xl text-lg font-semibold">Garment's Design & Pattern Making</p>
+                    </div>
                 </div>
-
-                <div>
-                    <img src="http://dpi.ac/wp-content/uploads/2022/01/auto.jpg" alt="" class="rounded-2xl">
+            
+                <div style="height: 200px; width: 225px; background: no-repeat; background-size: cover;" class="relative">
+                    <div style="height: 100%; width: 100%; position: absolute;
+                    top: 0;
+                    z-index: 1;
+                    background: #ff000052;"></div>
+                    <img src="http://dpi.ac/wp-content/uploads/2022/01/Graphics-Design.jpg" alt="" style="height: 100%; width: 100%; position: absolute;
+                    top: 0;">
+                     <div class="text-center text-white" style="    height: fit-content;
+                     width: 100%;
+                     position: absolute;
+                     top: 0;
+                     right: 0;
+                     bottom: 0;
+                     left: 0;
+                     margin: auto;
+                     z-index: 2;">
+                        <i class="fa-solid fa-bezier-curve text-3xl"></i>
+                        <p class="lg:text-xl text-lg font-semibold">Graphics <br> Design</p>
+                    </div>
                 </div>
-
-                <div>
-                    <img src="http://dpi.ac/wp-content/uploads/2022/01/mechanical.jpg" alt="" class="rounded-2xl">
+            
+                <div style="height: 200px; width: 225px; background: no-repeat; background-size: cover;" class="relative">
+                    <div style="height: 100%; width: 100%; position: absolute;
+                    top: 0;
+                    z-index: 1;
+                    background: #ff000052;"></div>
+                    <img src="http://dpi.ac/wp-content/uploads/2022/01/auto.jpg" alt="" style="height: 100%; width: 100%; position: absolute;
+                    top: 0;">
+                     <div class="text-center text-white" style="    height: fit-content;
+                     width: 100%;
+                     position: absolute;
+                     top: 0;
+                     right: 0;
+                     bottom: 0;
+                     left: 0;
+                     margin: auto;
+                     z-index: 2;">
+                        <i class="fa-solid fa-car text-3xl"></i>
+                        <p class="lg:text-xl text-lg font-semibold">Automobile <br> Engineering</p>
+                    </div>
+                </div>
+            
+                <div style="height: 200px; width: 225px; background: no-repeat; background-size: cover;" class="relative">
+                    <div style="height: 100%; width: 100%; position: absolute;
+                    top: 0;
+                    z-index: 1;
+                    background: #ff000052;"></div>
+                    <img src="http://dpi.ac/wp-content/uploads/2022/01/mechanical.jpg" alt="" style="height: 100%; width: 100%; position: absolute;
+                    top: 0;">
+                     <div class="text-center text-white" style="    height: fit-content;
+                     width: 100%;
+                     position: absolute;
+                     top: 0;
+                     right: 0;
+                     bottom: 0;
+                     left: 0;
+                     margin: auto;
+                     z-index: 2;">
+                        <i class="fa-solid fa-gear text-3xl"></i>
+                        <p class="lg:text-xl text-lg font-semibold">Mechanical <br> Engineering</p>
+                    </div>
                 </div>
             </div>
             <!-- IMage section END_______________________________ -->
@@ -602,9 +848,9 @@
 
         <!-- Why choose Section Start________________________________________________ -->
         <div class="mt-16 ">
-            <h1 class="lg:text-4xl text-3xl font-bold text-black text-center  lg:px-0 px-8 mb-10 ">Why Choose Daffodil
+            <h1 class="lg:text-4xl text-3xl font-bold text-black text-center  lg:px-0 px-8 mb-10 ">Why Choose Park
                 Polytechnic Institute</h1>
-            <p class="lg:text-center text-lg lg:px-14 px-10 align ">Daffodil polytechnic institute is the <strong>best
+            <p class="lg:text-center text-lg lg:px-14 px-10 align ">Park polytechnic institute is the <strong>best
                     polytechnic institute in Dhaka</strong>. <a href="" class="text-blue-600">DIET</a> is also a similar
                 polytechnic institute for diploma engineering of daffodil concern. Our institute provides you with
                 complete support and creates an environment where you will love to learn. And also our institute offers
@@ -612,18 +858,93 @@
 
 
             <!-- slider section START_______________________________________ -->
-            <div class="grid lg:grid-cols-3 grid-cols-1 justify-items-center mt-16 gap-5">
-                <div class="">
-                    <img src="https://dpi.ac/wp-content/uploads/2021/10/diu1.jpg" alt="" class="">
-                </div>
+            <section class="slider lg:px-20">
+                <!-- Slider main container -->
+                <div class="swiper slide0">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
 
-                <div class="col-span-2 text-center">
-                    <h2 class="text-black text-xl font-semibold mb-3">Daffodil International University</h2>
-                    <p>শিক্ষার্থীদের আর্থিক সুবিধা সহ স্বল্পতম সময়ে উচ্চশিক্ষার নিশ্চয়তা দেওয়ার জন্য হোটেল <br>
-                        পলিটেকনিক ইনস্টিটিউটের সাথে যুক্ত আছে <span class="text-blue-500"> Daffodil International
-                            University</span> ।</p>
+                            <div class="grid lg:grid-cols-3 grid-cols-1 justify-items-center mt-16 gap-5">
+                                <div class="">
+                                    <img src="https://dpi.ac/wp-content/uploads/2021/10/diu1.jpg" alt="" class="">
+                                </div>
+
+                                <div class="col-span-2 text-center">
+                                    <h2 class="text-black text-xl font-semibold mb-3">Daffodil International University
+                                    </h2>
+                                    <p>শিক্ষার্থীদের আর্থিক সুবিধা সহ স্বল্পতম সময়ে উচ্চশিক্ষার নিশ্চয়তা দেওয়ার জন্য
+                                        হোটেল <br>
+                                        পলিটেকনিক ইনস্টিটিউটের সাথে যুক্ত আছে <span class="text-blue-500"> Daffodil
+                                            International
+                                            University</span> ।</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="grid lg:grid-cols-3 grid-cols-1 justify-items-center mt-16 gap-5">
+                                <div class="">
+                                    <img src="https://dpi.ac/wp-content/uploads/2021/10/diu1.jpg" alt="" class="">
+                                </div>
+
+                                <div class="col-span-2 text-center">
+                                    <h2 class="text-black text-xl font-semibold mb-3">Daffodil International University
+                                    </h2>
+                                    <p>শিক্ষার্থীদের আর্থিক সুবিধা সহ স্বল্পতম সময়ে উচ্চশিক্ষার নিশ্চয়তা দেওয়ার জন্য
+                                        হোটেল <br>
+                                        পলিটেকনিক ইনস্টিটিউটের সাথে যুক্ত আছে <span class="text-blue-500"> Daffodil
+                                            International
+                                            University</span> ।</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="grid lg:grid-cols-3 grid-cols-1 justify-items-center mt-16 gap-5">
+                                <div class="">
+                                    <img src="https://dpi.ac/wp-content/uploads/2021/10/diu1.jpg" alt="" class="">
+                                </div>
+
+                                <div class="col-span-2 text-center">
+                                    <h2 class="text-black text-xl font-semibold mb-3">Daffodil International University
+                                    </h2>
+                                    <p>শিক্ষার্থীদের আর্থিক সুবিধা সহ স্বল্পতম সময়ে উচ্চশিক্ষার নিশ্চয়তা দেওয়ার জন্য
+                                        হোটেল <br>
+                                        পলিটেকনিক ইনস্টিটিউটের সাথে যুক্ত আছে <span class="text-blue-500"> Daffodil
+                                            International
+                                            University</span> ।</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="grid lg:grid-cols-3 grid-cols-1 justify-items-center mt-16 gap-5">
+                                <div class="">
+                                    <img src="https://dpi.ac/wp-content/uploads/2021/10/diu1.jpg" alt="" class="">
+                                </div>
+
+                                <div class="col-span-2 text-center">
+                                    <h2 class="text-black text-xl font-semibold mb-3">Daffodil International University
+                                    </h2>
+                                    <p>শিক্ষার্থীদের আর্থিক সুবিধা সহ স্বল্পতম সময়ে উচ্চশিক্ষার নিশ্চয়তা দেওয়ার জন্য
+                                        হোটেল <br>
+                                        পলিটেকনিক ইনস্টিটিউটের সাথে যুক্ত আছে <span class="text-blue-500"> Daffodil
+                                            International
+                                            University</span> ।</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination pagination0"></div>
                 </div>
-            </div>
+                <div class="pagination_">
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev prev0"><i class="fa-solid fa-angle-left"></i></div>
+                    <div class="swiper-button-next next0"><i class="fa-solid fa-angle-right"></i></div>
+                </div>
+            </section>
             <!-- slider section END_______________________________________ -->
         </div>
         <!-- Why choose Section Start________________________________________________ -->
@@ -640,12 +961,12 @@
         <!-- Campus life Section START_____________________________________ -->
         <div class="mt-10">
             <h1 class="lg:text-4xl text-3xl font-bold text-black text-center lg:px-0 px-8 mb-10 ">Campus Life</h1>
-            <p class="lg:text-center text-lg lg:px-14 px-10 align ">Daffodil polytechnic institute is the <strong>best
+            <p class="lg:text-center text-lg lg:px-14 px-10 align ">Park polytechnic institute is the <strong>best
                     polytechnic institute in Dhaka</strong> for student life. Students’ life at this institute is not
                 just studying. It offers numerous interesting opportunities and a lot of fun. Each interested student
                 can find where to go and how to apply his/her talents, skills, and interests. Getting involved with
                 extracurricular activities during your time here at the digital club is a great way to learn something
-                new and immerse yourself in the dynamic student community at the daffodil polytechnic institute
+                new and immerse yourself in the dynamic student community at the park polytechnic institute
                 <strong>(best polytechnic institute in Dhaka)</strong>.
             </p>
 
@@ -674,7 +995,7 @@
             </div>
             <!-- slider section END_______________________________________ -->
         </div>
-        <!-- Campus life Section START_____________________________________ -->
+        <!-- Campus life Section END_____________________________________ -->
 
 
 
@@ -852,26 +1173,297 @@
             <h1 class="lg:text-4xl text-3xl font-bold text-black text-center lg:px-0 px-8 mb-10 ">Student's Feedback
             </h1>
 
-            <div class="bg-base-100   p-5">
-                <img src="https://dpi.ac/wp-content/uploads/2021/07/Alid-Hasan-Akash-150x150.jpeg" alt=""
-                    class="rounded-full text-center w-32 mx-auto">
-                <p class="text-black font-semibold text-xl text-center mt-3">Alid Hasan Akash</p>
-                <p class="text-gray-500 text-center">Alumni Computer Technology</p>
-                <div class="text-center mt-1 mb-3">
-                    <i class="fa-solid fa-star text-yellow-500"></i>
-                    <i class="fa-solid fa-star text-yellow-500"></i>
-                    <i class="fa-solid fa-star text-yellow-500"></i>
-                    <i class="fa-solid fa-star text-yellow-500"></i>
-                    <i class="fa-solid fa-star text-yellow-500"></i>
-                </div>
-                <p class="lg:text-center align">I have a dream and the dream is to represent Bangladesh to other
-                    countries. Without wasting time during the lockdown, I have invented gas detectors, home automation,
-                    and clap sensors. If I faced any problem relating to my project, I asked for solutions from my
-                    project supervisor and he always supported me. Recently my home automation project took second place
-                    in the semi-final round of the ICT Carnival. </p>
+            <section class="slider">
+                <!-- Slider main container -->
+                <div class="swiper slide1">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
 
-            </div>
+                            <div class="bg-base-100   p-5">
+                                <div class="w-32 mx-auto">
+                                    <img src="https://dpi.ac/wp-content/uploads/2021/07/Alid-Hasan-Akash-150x150.jpeg"
+                                        alt="" class="rounded-full text-center ">
+                                </div>
+                                <p class="text-black font-semibold text-xl text-center mt-3">Alid Hasan Akash</p>
+                                <p class="text-gray-500 text-center">Alumni Computer Technology</p>
+                                <div class="text-center mt-1 mb-3">
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                </div>
+                                <p class="lg:text-center align">I have a dream and the dream is to represent Bangladesh
+                                    to other
+                                    countries. Without wasting time during the lockdown, I have invented gas detectors,
+                                    home
+                                    automation,
+                                    and clap sensors. If I faced any problem relating to my project, I asked for
+                                    solutions from
+                                    my
+                                    project supervisor and he always supported me. Recently my home automation project
+                                    took
+                                    second place
+                                    in the semi-final round of the ICT Carnival. </p>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-base-100   p-5">
+                                <div class="w-32 mx-auto">
+                                    <img src="https://dpi.ac/wp-content/uploads/2021/07/Alid-Hasan-Akash-150x150.jpeg"
+                                        alt="" class="rounded-full text-center ">
+                                </div>
+                                <p class="text-black font-semibold text-xl text-center mt-3">Alid Hasan Akash</p>
+                                <p class="text-gray-500 text-center">Alumni Computer Technology</p>
+                                <div class="text-center mt-1 mb-3">
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                </div>
+                                <p class="lg:text-center align">I have a dream and the dream is to represent Bangladesh
+                                    to other
+                                    countries. Without wasting time during the lockdown, I have invented gas detectors,
+                                    home
+                                    automation,
+                                    and clap sensors. If I faced any problem relating to my project, I asked for
+                                    solutions from
+                                    my
+                                    project supervisor and he always supported me. Recently my home automation project
+                                    took
+                                    second place
+                                    in the semi-final round of the ICT Carnival. </p>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-base-100   p-5">
+                                <div class="w-32 mx-auto">
+                                    <img src="https://dpi.ac/wp-content/uploads/2021/07/Alid-Hasan-Akash-150x150.jpeg"
+                                        alt="" class="rounded-full text-center ">
+                                </div>
+                                <p class="text-black font-semibold text-xl text-center mt-3">Alid Hasan Akash</p>
+                                <p class="text-gray-500 text-center">Alumni Computer Technology</p>
+                                <div class="text-center mt-1 mb-3">
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                </div>
+                                <p class="lg:text-center align">I have a dream and the dream is to represent Bangladesh
+                                    to other
+                                    countries. Without wasting time during the lockdown, I have invented gas detectors,
+                                    home
+                                    automation,
+                                    and clap sensors. If I faced any problem relating to my project, I asked for
+                                    solutions from
+                                    my
+                                    project supervisor and he always supported me. Recently my home automation project
+                                    took
+                                    second place
+                                    in the semi-final round of the ICT Carnival. </p>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-base-100   p-5">
+                                <div class="w-32 mx-auto">
+                                    <img src="https://dpi.ac/wp-content/uploads/2021/07/Alid-Hasan-Akash-150x150.jpeg"
+                                        alt="" class="rounded-full text-center ">
+                                </div>
+                                <p class="text-black font-semibold text-xl text-center mt-3">Alid Hasan Akash</p>
+                                <p class="text-gray-500 text-center">Alumni Computer Technology</p>
+                                <div class="text-center mt-1 mb-3">
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                </div>
+                                <p class="lg:text-center align">I have a dream and the dream is to represent Bangladesh
+                                    to other
+                                    countries. Without wasting time during the lockdown, I have invented gas detectors,
+                                    home
+                                    automation,
+                                    and clap sensors. If I faced any problem relating to my project, I asked for
+                                    solutions from
+                                    my
+                                    project supervisor and he always supported me. Recently my home automation project
+                                    took
+                                    second place
+                                    in the semi-final round of the ICT Carnival. </p>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-base-100   p-5">
+                                <div class="w-32 mx-auto">
+                                    <img src="https://dpi.ac/wp-content/uploads/2021/07/Alid-Hasan-Akash-150x150.jpeg"
+                                        alt="" class="rounded-full text-center ">
+                                </div>
+                                <p class="text-black font-semibold text-xl text-center mt-3">Alid Hasan Akash</p>
+                                <p class="text-gray-500 text-center">Alumni Computer Technology</p>
+                                <div class="text-center mt-1 mb-3">
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                </div>
+                                <p class="lg:text-center align">I have a dream and the dream is to represent Bangladesh
+                                    to other
+                                    countries. Without wasting time during the lockdown, I have invented gas detectors,
+                                    home
+                                    automation,
+                                    and clap sensors. If I faced any problem relating to my project, I asked for
+                                    solutions from
+                                    my
+                                    project supervisor and he always supported me. Recently my home automation project
+                                    took
+                                    second place
+                                    in the semi-final round of the ICT Carnival. </p>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-base-100   p-5">
+                                <div class="w-32 mx-auto">
+                                    <img src="https://dpi.ac/wp-content/uploads/2021/07/Alid-Hasan-Akash-150x150.jpeg"
+                                        alt="" class="rounded-full text-center ">
+                                </div>
+                                <p class="text-black font-semibold text-xl text-center mt-3">Alid Hasan Akash</p>
+                                <p class="text-gray-500 text-center">Alumni Computer Technology</p>
+                                <div class="text-center mt-1 mb-3">
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                </div>
+                                <p class="lg:text-center align">I have a dream and the dream is to represent Bangladesh
+                                    to other
+                                    countries. Without wasting time during the lockdown, I have invented gas detectors,
+                                    home
+                                    automation,
+                                    and clap sensors. If I faced any problem relating to my project, I asked for
+                                    solutions from
+                                    my
+                                    project supervisor and he always supported me. Recently my home automation project
+                                    took
+                                    second place
+                                    in the semi-final round of the ICT Carnival. </p>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-base-100   p-5">
+                                <div class="w-32 mx-auto">
+                                    <img src="https://dpi.ac/wp-content/uploads/2021/07/Alid-Hasan-Akash-150x150.jpeg"
+                                        alt="" class="rounded-full text-center ">
+                                </div>
+                                <p class="text-black font-semibold text-xl text-center mt-3">Alid Hasan Akash</p>
+                                <p class="text-gray-500 text-center">Alumni Computer Technology</p>
+                                <div class="text-center mt-1 mb-3">
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                </div>
+                                <p class="lg:text-center align">I have a dream and the dream is to represent Bangladesh
+                                    to other
+                                    countries. Without wasting time during the lockdown, I have invented gas detectors,
+                                    home
+                                    automation,
+                                    and clap sensors. If I faced any problem relating to my project, I asked for
+                                    solutions from
+                                    my
+                                    project supervisor and he always supported me. Recently my home automation project
+                                    took
+                                    second place
+                                    in the semi-final round of the ICT Carnival. </p>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-base-100   p-5">
+                                <div class="w-32 mx-auto">
+                                    <img src="https://dpi.ac/wp-content/uploads/2021/07/Alid-Hasan-Akash-150x150.jpeg"
+                                        alt="" class="rounded-full text-center ">
+                                </div>
+                                <p class="text-black font-semibold text-xl text-center mt-3">Alid Hasan Akash</p>
+                                <p class="text-gray-500 text-center">Alumni Computer Technology</p>
+                                <div class="text-center mt-1 mb-3">
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                </div>
+                                <p class="lg:text-center align">I have a dream and the dream is to represent Bangladesh
+                                    to other
+                                    countries. Without wasting time during the lockdown, I have invented gas detectors,
+                                    home
+                                    automation,
+                                    and clap sensors. If I faced any problem relating to my project, I asked for
+                                    solutions from
+                                    my
+                                    project supervisor and he always supported me. Recently my home automation project
+                                    took
+                                    second place
+                                    in the semi-final round of the ICT Carnival. </p>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-base-100   p-5">
+                                <div class="w-32 mx-auto">
+                                    <img src="https://dpi.ac/wp-content/uploads/2021/07/Alid-Hasan-Akash-150x150.jpeg"
+                                        alt="" class="rounded-full text-center ">
+                                </div>
+                                <p class="text-black font-semibold text-xl text-center mt-3">Alid Hasan Akash</p>
+                                <p class="text-gray-500 text-center">Alumni Computer Technology</p>
+                                <div class="text-center mt-1 mb-3">
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                </div>
+                                <p class="lg:text-center align">I have a dream and the dream is to represent Bangladesh
+                                    to other
+                                    countries. Without wasting time during the lockdown, I have invented gas detectors,
+                                    home
+                                    automation,
+                                    and clap sensors. If I faced any problem relating to my project, I asked for
+                                    solutions from
+                                    my
+                                    project supervisor and he always supported me. Recently my home automation project
+                                    took
+                                    second place
+                                    in the semi-final round of the ICT Carnival. </p>
+
+                            </div>
+                        </div>
+                        ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination pagination0"></div>
+                </div>
+                <div class="pagination_">
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev prev1"><i class="fa-solid fa-angle-left"></i></div>
+                    <div class="swiper-button-next next1"><i class="fa-solid fa-angle-right"></i></div>
+                </div>
+            </section>
+
         </div>
+
         <!-- Students Feedback Section END_____________________________________ -->
 
 
@@ -882,25 +1474,249 @@
         <div class="mt-20 mb-10 lg:px-48 px-5  ">
             <h1 class="lg:text-4xl text-3xl font-bold text-black text-center lg:px-0 px-8 mb-10 ">Parent's Feedback</h1>
 
-            <div class="bg-base-100   p-5">
-                <img src="https://dpi.ac/wp-content/uploads/2021/07/Shakhawat-Hossain-300x300.jpeg" alt=""
-                    class="rounded-full text-center w-32 mx-auto">
-                <p class="text-black font-semibold text-xl text-center mt-3">Alid Hasan Akash</p>
-                <div class="text-center mt-1 mb-3">
-                    <i class="fa-solid fa-star text-yellow-500"></i>
-                    <i class="fa-solid fa-star text-yellow-500"></i>
-                    <i class="fa-solid fa-star text-yellow-500"></i>
-                    <i class="fa-solid fa-star text-yellow-500"></i>
-                    <i class="fa-solid fa-star text-yellow-500"></i>
-                </div>
-                <p class="lg:text-center align">First thing is, I would like to thank the institute personally for
-                    continuing the education of the students of the institute during this hard time. Secondly, the
-                    insurance system they have launched with Pragati Life Insurance is outstanding work. Often students
-                    lose the hope of education for the loss of the earning person in the family. Now, this insurance for
-                    the students and guardians will make the studies of the students of the institute risk-free. I also
-                    would like to thank the system and teachers of the institute as well. </p>
+            <section class="slider">
+                <!-- Slider main container -->
+                <div class="swiper slide2">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
 
-            </div>
+                            <div class="bg-base-100   p-5">
+                                <img src="./assets/parent.webp" alt="" class="rounded-full text-center w-32 mx-auto">
+                                <p class="text-black font-semibold text-xl text-center mt-3">Alid Hasan Akash</p>
+                                <div class="text-center mt-1 mb-3">
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                </div>
+                                <p class="lg:text-center align">First thing is, I would like to thank the institute
+                                    personally for
+                                    continuing the education of the students of the institute during this hard time.
+                                    Secondly, the
+                                    insurance system they have launched with Pragati Life Insurance is outstanding work.
+                                    Often students
+                                    lose the hope of education for the loss of the earning person in the family. Now,
+                                    this insurance for
+                                    the students and guardians will make the studies of the students of the institute
+                                    risk-free. I also
+                                    would like to thank the system and teachers of the institute as well. </p>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-base-100   p-5">
+                                <img src="./assets/parent.webp" alt="" class="rounded-full text-center w-32 mx-auto">
+                                <p class="text-black font-semibold text-xl text-center mt-3">Alid Hasan Akash</p>
+                                <div class="text-center mt-1 mb-3">
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                </div>
+                                <p class="lg:text-center align">First thing is, I would like to thank the institute
+                                    personally for
+                                    continuing the education of the students of the institute during this hard time.
+                                    Secondly, the
+                                    insurance system they have launched with Pragati Life Insurance is outstanding work.
+                                    Often students
+                                    lose the hope of education for the loss of the earning person in the family. Now,
+                                    this insurance for
+                                    the students and guardians will make the studies of the students of the institute
+                                    risk-free. I also
+                                    would like to thank the system and teachers of the institute as well. </p>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-base-100   p-5">
+                                <img src="./assets/parent.webp" alt="" class="rounded-full text-center w-32 mx-auto">
+                                <p class="text-black font-semibold text-xl text-center mt-3">Alid Hasan Akash</p>
+                                <div class="text-center mt-1 mb-3">
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                </div>
+                                <p class="lg:text-center align">First thing is, I would like to thank the institute
+                                    personally for
+                                    continuing the education of the students of the institute during this hard time.
+                                    Secondly, the
+                                    insurance system they have launched with Pragati Life Insurance is outstanding work.
+                                    Often students
+                                    lose the hope of education for the loss of the earning person in the family. Now,
+                                    this insurance for
+                                    the students and guardians will make the studies of the students of the institute
+                                    risk-free. I also
+                                    would like to thank the system and teachers of the institute as well. </p>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-base-100   p-5">
+                                <img src="./assets/parent.webp" alt="" class="rounded-full text-center w-32 mx-auto">
+                                <p class="text-black font-semibold text-xl text-center mt-3">Alid Hasan Akash</p>
+                                <div class="text-center mt-1 mb-3">
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                </div>
+                                <p class="lg:text-center align">First thing is, I would like to thank the institute
+                                    personally for
+                                    continuing the education of the students of the institute during this hard time.
+                                    Secondly, the
+                                    insurance system they have launched with Pragati Life Insurance is outstanding work.
+                                    Often students
+                                    lose the hope of education for the loss of the earning person in the family. Now,
+                                    this insurance for
+                                    the students and guardians will make the studies of the students of the institute
+                                    risk-free. I also
+                                    would like to thank the system and teachers of the institute as well. </p>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-base-100   p-5">
+                                <img src="./assets/parent.webp" alt="" class="rounded-full text-center w-32 mx-auto">
+                                <p class="text-black font-semibold text-xl text-center mt-3">Alid Hasan Akash</p>
+                                <div class="text-center mt-1 mb-3">
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                </div>
+                                <p class="lg:text-center align">First thing is, I would like to thank the institute
+                                    personally for
+                                    continuing the education of the students of the institute during this hard time.
+                                    Secondly, the
+                                    insurance system they have launched with Pragati Life Insurance is outstanding work.
+                                    Often students
+                                    lose the hope of education for the loss of the earning person in the family. Now,
+                                    this insurance for
+                                    the students and guardians will make the studies of the students of the institute
+                                    risk-free. I also
+                                    would like to thank the system and teachers of the institute as well. </p>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-base-100   p-5">
+                                <img src="./assets/parent.webp" alt="" class="rounded-full text-center w-32 mx-auto">
+                                <p class="text-black font-semibold text-xl text-center mt-3">Alid Hasan Akash</p>
+                                <div class="text-center mt-1 mb-3">
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                </div>
+                                <p class="lg:text-center align">First thing is, I would like to thank the institute
+                                    personally for
+                                    continuing the education of the students of the institute during this hard time.
+                                    Secondly, the
+                                    insurance system they have launched with Pragati Life Insurance is outstanding work.
+                                    Often students
+                                    lose the hope of education for the loss of the earning person in the family. Now,
+                                    this insurance for
+                                    the students and guardians will make the studies of the students of the institute
+                                    risk-free. I also
+                                    would like to thank the system and teachers of the institute as well. </p>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-base-100   p-5">
+                                <img src="./assets/parent.webp" alt="" class="rounded-full text-center w-32 mx-auto">
+                                <p class="text-black font-semibold text-xl text-center mt-3">Alid Hasan Akash</p>
+                                <div class="text-center mt-1 mb-3">
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                </div>
+                                <p class="lg:text-center align">First thing is, I would like to thank the institute
+                                    personally for
+                                    continuing the education of the students of the institute during this hard time.
+                                    Secondly, the
+                                    insurance system they have launched with Pragati Life Insurance is outstanding work.
+                                    Often students
+                                    lose the hope of education for the loss of the earning person in the family. Now,
+                                    this insurance for
+                                    the students and guardians will make the studies of the students of the institute
+                                    risk-free. I also
+                                    would like to thank the system and teachers of the institute as well. </p>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-base-100   p-5">
+                                <img src="./assets/parent.webp" alt="" class="rounded-full text-center w-32 mx-auto">
+                                <p class="text-black font-semibold text-xl text-center mt-3">Alid Hasan Akash</p>
+                                <div class="text-center mt-1 mb-3">
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                </div>
+                                <p class="lg:text-center align">First thing is, I would like to thank the institute
+                                    personally for
+                                    continuing the education of the students of the institute during this hard time.
+                                    Secondly, the
+                                    insurance system they have launched with Pragati Life Insurance is outstanding work.
+                                    Often students
+                                    lose the hope of education for the loss of the earning person in the family. Now,
+                                    this insurance for
+                                    the students and guardians will make the studies of the students of the institute
+                                    risk-free. I also
+                                    would like to thank the system and teachers of the institute as well. </p>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-base-100   p-5">
+                                <img src="./assets/parent.webp" alt="" class="rounded-full text-center w-32 mx-auto">
+                                <p class="text-black font-semibold text-xl text-center mt-3">Alid Hasan Akash</p>
+                                <div class="text-center mt-1 mb-3">
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                    <i class="fa-solid fa-star text-yellow-500"></i>
+                                </div>
+                                <p class="lg:text-center align">First thing is, I would like to thank the institute
+                                    personally for
+                                    continuing the education of the students of the institute during this hard time.
+                                    Secondly, the
+                                    insurance system they have launched with Pragati Life Insurance is outstanding work.
+                                    Often students
+                                    lose the hope of education for the loss of the earning person in the family. Now,
+                                    this insurance for
+                                    the students and guardians will make the studies of the students of the institute
+                                    risk-free. I also
+                                    would like to thank the system and teachers of the institute as well. </p>
+
+                            </div>
+                        </div>
+                        ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination pagination1"></div>
+                </div>
+                <div class="pagination_">
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev prev2"><i class="fa-solid fa-angle-left"></i></div>
+                    <div class="swiper-button-next next2"><i class="fa-solid fa-angle-right"></i></div>
+                </div>
+            </section>
         </div>
         <!-- Parents feedback section END________________________________________ -->
 
@@ -909,7 +1725,7 @@
 
 
         <!-- Link & Accreditation START________________________________________________ -->
-        <div class="mb-10">
+        <div class="mb-10 mt-10">
             <h1 class="lg:text-4xl text-3xl font-bold text-black text-center lg:px-0 px-8 mb-10 ">Link & Accreditation
             </h1>
             <div class="w-[80%] mx-auto">
@@ -1025,8 +1841,8 @@
 
 
         </div>
-        <div class="text-center text-sm text-black  shadow-2xl font-semibold">
-            <p>© 2023 Park Polytechnic Institute. All rights reserved. Developed by STIT BD</p>
+        <div class="text-center text-sm text-white py-2  shadow-2xl font-semibold bg-[#ed0000]">
+            <p>© 2023 Park Polytechnic Institute. All rights reserved. Developed by <a href="https://www.stitbd.com/" target="_blank" >STIT BD</a> </p>
         </div>
 
 
@@ -1060,7 +1876,7 @@
 
 
 
-        // navbar__________________
+        // navbar section JAVASCRIPT START__________________
         // Burger menus
         document.addEventListener('DOMContentLoaded', function () {
             // open
@@ -1102,11 +1918,50 @@
             }
         });
 
-        // navbar END________________________________________________________
+        // navbar Section JAVASCRIPT   END________________________________________________________
 
 
 
         // slider START_______________________________________________
+
+
+
+        // const swiper = new Swiper('.swiper', {
+        //     speed: 400,
+        //     spaceBetween: 10,
+        //     slidesPerView: 1,
+        //     pagination: {
+        //         el: '.swiper-pagination',
+        //         type: 'bullets',
+        //         clickable: true
+        //     },
+        //     navigation: {
+        //         nextEl: '.swiper-button-next',
+        //         prevEl: '.swiper-button-prev',
+        //     },
+
+        //      autoplay: {
+        //             delay: 4000,
+        //         },
+
+
+        //     breakpoints: {
+        //         0: {
+        //             slidesPerView: 1,
+        //         },
+        //         520: {
+        //             slidesPerView: 1,
+        //         },
+        //         768: {
+        //             slidesPerView: 1,
+        //         },
+        //         1000: {
+        //             slidesPerView: 1,
+        //         }
+        //     }
+
+        // })
+
         var i = 0;
         for (i == 0; i < 100; i++) {
             new Swiper('.slide' + i, {
@@ -1115,30 +1970,30 @@
                 grabCursor: "true",
                 fade: "true",
 
-                // pagination: {
-                //     el: '.pagination2',
-                //     type: 'bullets',
-                //     clickable: true
-                // },
+                pagination: {
+                    el: '.pagination' + i,
+                    type: 'bullets',
+                    clickable: true
+                },
                 navigation: {
                     nextEl: '.next' + i,
                     prevEl: '.prev' + i,
                 },
-                // autoplay: {
-                //     delay: 4000,
-                // },
+                autoplay: {
+                    delay: 4000,
+                },
                 breakpoints: {
                     0: {
-                        slidesPerView: 2,
+                        slidesPerView: 1,
                     },
                     520: {
-                        slidesPerView: 2,
+                        slidesPerView: 1,
                     },
                     768: {
-                        slidesPerView: 3,
+                        slidesPerView: 1,
                     },
                     1000: {
-                        slidesPerView: 4,
+                        slidesPerView: 1,
                     }
                 }
             })
@@ -1160,5 +2015,6 @@
 
     </script>
 </body>
+
 
 </html>
