@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+     <!-- Daisyui Link________________________________________________-->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css" rel="stylesheet" type="text/css" />
+
+
+     <!-- Tailwind css Link___________________________________________ -->
+     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
+ 
+ 
+ 
+     <!-- fontawesome___________________ -->
+     <script src="https://kit.fontawesome.com/cfa78000ac.js" crossorigin="anonymous"></script>
+ 
+ 
+ 
+     <style>
+         .align {
+             text-align: justify;
+         }
+ 
+ 
+         /* animation for text START__________________ */
+         .animation {
+             position: relative;
+             animation-name: example;
+             animation-duration: 3s;
+         }
+ 
+         @keyframes example {
+             0% {
+                 /* background-color: green; */
+                 left: 0px;
+                 bottom: -30px;
+             }
+ 
+             100% {
+                 /* background-color: white; */
+                 left: 0px;
+                 bottom: 0px;
+             }
+         }
+ 
+         /* animation for text END__________________ */
+     </style>
+
+</head>
+<body>
+    <div class="mt-10 mb-10 lg:p-10 p-5  ">
+
+        <div class="grid lg:grid-cols-3 grid-cols-1 gap-10 ">
+             <div class="mx-10">
+                 <div>
+                     <input type="text" placeholder="Search menu/ Content" class="input input-bordered w-full  rounded-full" />
+                 </div>
+ 
+                 <div class="mt-10">
+                    <p class="text-teal-600"><a href="./applyForm.html">Apply for Recommendation Letter</a></p>
+                    <hr class="mt-2 mb-2">
+                    <p class="text-teal-600"> <a href="./applyForm.html">Apply for Testimonial</a> </p>
+                    <hr class="mt-2 mb-2">
+                    <p class="text-teal-600"> <a href="./applyForm.html">Apply for Course Complete Certificate</a></p>
+                    <hr class="mt-2 mb-2">
+                    <p class="text-teal-600"> <a href="./applyForm.html">Apply for Readmission</a></p>
+                    <hr class="mt-2 mb-2">
+                    <p class="text-teal-600"> <a href="./applyForm.html">Apply for Industrial Placement Documents</a></p>
+                    <hr class="mt-2 mb-2">
+                    <p class="text-teal-600"> <a href="./applyForm.html">Apply for Academic Transcript & Certificate Withdrawal</a></p>
+                    <hr class="mt-2 mb-2">
+                    <p class="text-teal-600"> <a href="./applyForm.html">Students Admission Cancel Form</a></p>
+                    <hr class="mt-2 mb-2">
+                    <p class="text-teal-600"> <a href="./applyForm.html">International Student Exchange Programs</a></p>
+                    <hr class="mt-2 mb-2">
+                    <p class="text-teal-600"> <a href="./applyForm.html">ID card Re-issue</a></p>
+                    <hr class="mt-2 mb-2">
+                 </div>
+             </div>
+ 
+             <div class="lg:col-span-2  ">
+                <div>
+                    <h1 class="text-center lg:text-4xl text-3xl font-bold mb-14">Student Application Form</h1>
+
+                    <form action="">
+                        <div class=" mb-5">
+                            <div>
+                                <p class="font-bold">Application Type * </p>
+                            </div>
+                            <div class="w-full  mt-3">
+                                <select class="select select-bordered w-full ">
+                                    <option>Recommandation Letter</option>
+                                    <option>Demo</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class=" mb-5">
+                            <div>
+                                <p class="font-bold">Subject  * </p>
+                            </div>
+                            <div class="w-full  mt-3">
+                                <input type="text" placeholder="example: request for recommandation letter" class="input input-bordered w-full" />
+                            </div>
+                        </div>
+
+
+                        <div class=" mb-5">
+                            <div>
+                                <p class="font-bold">Reason for apply * </p>
+                            </div>
+                            <div class="w-full mt-3">
+                                <input type="text" placeholder="Provide a valid Reason" class="input input-bordered w-full" />
+                            </div>
+                        </div>
+
+
+                        <div class="mb-5">
+                            <div>
+                                <p class="font-bold">Student Name * </p>
+                            </div>
+                            <div class="w-full mt-3">
+                                <input type="text" placeholder="Full Name (As per the Certificate)" class="input input-bordered w-full" />
+                            </div>
+                        </div>
+
+
+                        <div class="mb-5">
+                            <div>
+                                <p class="font-bold">Student Roll Number * </p>
+                            </div>
+                            <div class="w-full  mt-3">
+                                <input type="text" placeholder="BTEB Board Roll" class="input input-bordered w-full" />
+                            </div>
+                        </div>
+
+
+                        <div class="mb-5">
+                            <div>
+                                <p class="font-bold">Registration Number * </p>
+                            </div>
+                            <div class="w-full mt-3">
+                                <input type="text" placeholder="BTEB Registration Number" class="input input-bordered w-full" />
+                            </div>
+                        </div>
+
+
+                        <div class="mb-5">
+                            <div>
+                                <p class="font-bold">Session * </p>
+                            </div>
+                            <div class="w-full mt-3">
+                                <input type="text" placeholder="example: 2010-11" class="input input-bordered w-full" />
+                            </div>
+                        </div>
+
+
+                        <div class="mb-5">
+                            <div>
+                                <p class="font-bold">Department * </p>
+                            </div>
+                            <div class="w-full mt-3">
+                                <select class="select select-bordered w-full ">
+                                    <option>Architecture and Interior Design Technology</option>
+                                    <option>Apparel Menufacturing</option>
+                                    <option>Civil Engineering</option>
+                                    <option>Computer Engineering</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="mb-5">
+                            <div>
+                                <p class="font-bold">Student Phone Number * </p>
+                            </div>
+                            <div class="w-full  mt-3">
+                                <input type="number" placeholder="example: 01XXXXXXXXX" class="input input-bordered w-full" />
+                            </div>
+                        </div>
+
+
+                        <div class="mb-5">
+                            <div>
+                                <p class="font-bold">Student Email * </p>
+                            </div>
+                            <div class="w-full  mt-3">
+                                <input type="email" placeholder="example: abc@gmail.com" class="input input-bordered w-full" />
+                            </div>
+                        </div>
+
+
+                        <div class=" mb-5">
+                            <div>
+                                <p class="font-bold">Date of Birth * </p>
+                            </div>
+                            <div class="w-full   mt-3">
+                                <input type="date"  class="input input-bordered w-full" />
+                            </div>
+                        </div>
+
+
+                        <div class=" mb-5">
+                            <div>
+                                <p class="font-bold">Father Name * </p>
+                            </div>
+                            <div class="w-full  mt-3">
+                                <input type="text" placeholder="Father's Name" class="input input-bordered w-full" />
+                            </div>
+                        </div>
+
+
+                        <div class="mb-5">
+                            <div>
+                                <p class="font-bold">Mother Name * </p>
+                            </div>
+                            <div class="w-full mt-3">
+                                <input type="text" placeholder="Mother's Name" class="input input-bordered w-full" />
+                            </div>
+                        </div>
+
+
+                        <div class="mb-5">
+                            <div>
+                                <p class="font-bold">Admit Card (Scan Copy) * </p>
+                            </div>
+                            <div class="w-full mt-3">
+                                <input type="file" class="file-input file-input-bordered file-input-primary w-full max-w-xs" />
+                            </div>
+                        </div>
+
+
+                        <div class="mb-5">
+                            <div>
+                                <p class="font-bold">Payment Receipt (Scan Copy)  * </p>
+                            </div>
+                            <div class="w-full mt-3">
+                                <input type="file" class="file-input file-input-bordered file-input-primary w-full max-w-xs" />
+                            </div>
+                        </div>
+
+
+                        <div class="mt-5">
+                            <button class="btn btn-error text-white w-full">Submit</button>
+                        </div>
+
+
+                    </form>
+                </div>
+ 
+ 
+ 
+ 
+             </div>
+        </div>
+ 
+     </div>
+
+
+      <!-- Tailwind CSS JavaScript Code_____________________________________ -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>

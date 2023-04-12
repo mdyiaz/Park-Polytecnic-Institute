@@ -27,28 +27,54 @@
         }
 
 
+        /* animation for text START__________________ */
         .animation {
-            /* width: 100px;
-            height: 100px; */
-            /* background-color: red; */
             position: relative;
             animation-name: example;
-            animation-duration: 2s;
+            animation-duration: 3s;
         }
 
         @keyframes example {
             0% {
                 /* background-color: green; */
                 left: 0px;
-                bottom: 0px;
+                bottom: -80px;
             }
 
-            50% {
+            100% {
                 /* background-color: white; */
                 left: 0px;
-                bottom: 20px;
+                bottom: 0px;
             }
         }
+
+        /* animation for text END__________________ */
+
+
+
+
+        /* animation for IMAGE START__________________ */
+        .animation2 {
+            position: relative;
+            animation-name: example2;
+            animation-duration: 3s;
+        }
+
+        @keyframes example2 {
+            0% {
+                height: 288px;
+                left: 0px;
+                top: -288px;
+            }
+
+            100% {
+                left: 0px;
+                top: 0px;
+                height: 0;
+            }
+        }
+
+        /* animation for IMAGE END__________________ */
     </style>
 </head>
 
@@ -74,11 +100,15 @@
 
 
             <div class="grid lg:grid-cols-2 grid-cols-1 gap-20 mt-16 ">
+
                 <div class="">
-                    <img src="../assets/computer-engineer.jpg" alt="" class="rounded-3xl w-full h-72  object-cover">
+                    <div>
+                        <img src="../assets/computer-engineer.jpg" alt="" class="rounded-3xl w-full h-72  object-cover">
+                    </div>
+                    <div class="w-full object-cover bg-white img-cover example"></div>
                 </div>
 
-                <div class="animation">
+                <div class="example2">
                     <h2 class="font-bold lg:text-2xl text-xl text-blue-900">একমাত্র আমরাই দিচ্ছি ONE STUDENT ONE LAPTOP
                     </h2>
 
@@ -92,18 +122,21 @@
             </div>
 
             <div class="grid lg:grid-cols-2 grid-cols-1 gap-20 mt-16 ">
-                <div>
+                <div class="example2">
                     <h2 class="font-bold lg:text-2xl text-xl text-blue-900">আমাদের শিক্ষার্থীদের জন্য <br> আছে GOVT.
                         SCHOLARSHIP</h2>
 
-                    <p class="align mt-5"> পার্ক পলিটেকনিক ইনস্টিটিউট <span class="text-blue-500">বিশ্বব্যাংকের স্টেপ
+                    <p class="align mt-5 "> পার্ক পলিটেকনিক ইনস্টিটিউট <span class="text-blue-500">বিশ্বব্যাংকের স্টেপ
                             প্রকল্পের</span> পর যুক্ত হয়েছে সরকারের মাসিক উপবৃত্তি ও ফ্রি বই এর আওতায়। এর ফলে
                         শিক্ষার্থীরা মাসিক ৫০০ টাকা হারে প্রতি সেমিস্টারে ৩০০০টাকা ও সেমিস্টারের বই বাবদ ১০০০টাকা পাচ্ছে
                         ।</p>
                 </div>
 
                 <div>
-                    <img src="../assets/pic-5.jpg" alt="" class="rounded-3xl w-full h-72  object-cover">
+                    <div>
+                        <img src="../assets/pic-5.jpg" alt="" class="rounded-3xl w-full h-72  object-cover">
+                    </div>
+                    <div class="w-full object-cover bg-white img-cover example"></div>
                 </div>
 
             </div>
@@ -111,10 +144,13 @@
 
             <div class="grid lg:grid-cols-2 grid-cols-1 gap-20 mt-16 ">
                 <div>
-                    <img src="../assets/pic-5.jpg" alt="" class="rounded-3xl w-full h-72  object-cover">
+                    <div>
+                        <img src="../assets/pic-5.jpg" alt="" class="rounded-3xl w-full h-72  object-cover">
+                    </div>
+                    <div class="w-full object-cover bg-white img-cover example"></div>
                 </div>
 
-                <div>
+                <div class="example2">
                     <h2 class="font-bold lg:text-2xl text-xl text-blue-900">ডিপ্লোমা ইঞ্জিনিয়ারিং শিক্ষাকে ঝুকিমুক্ত
                         নিশ্চিত করতে শিক্ষার্থী-অভিভাবকদের জন্য লাইফ ইন্স্যুরেন্স</h2>
 
@@ -133,7 +169,7 @@
 
 
             <div class="grid lg:grid-cols-2 grid-cols-1 gap-20 mt-16 ">
-                <div>
+                <div class="example2">
                     <h2 class="font-bold lg:text-2xl text-xl text-blue-900">আমাদের আছে WORK BASED SCHOLARSHIP</h2>
 
                     <p class="align mt-5"> পার্ক পলিটেকনিক ইন্সিটিউট শিক্ষার্থীদের জন্য ভিন্ন রকম স্কলারশিপ “Work base
@@ -146,7 +182,11 @@
                 </div>
 
                 <div>
-                    <img src="../assets/pic-5.jpg" alt="" class="rounded-3xl w-full h-72  object-cover">
+                    <div>
+                        <img src="../assets/pic-5.jpg" alt="" class="rounded-3xl w-full h-72  object-cover">
+                    </div>
+
+                    <div class="w-full object-cover bg-white img-cover example"></div>
                 </div>
 
             </div>
@@ -154,10 +194,13 @@
 
             <div class="grid lg:grid-cols-2 grid-cols-1 gap-20 mt-16 ">
                 <div>
-                    <img src="../assets/pic-5.jpg" alt="" class="rounded-3xl w-full h-72  object-cover">
+                    <div>
+                        <img src="../assets/pic-5.jpg" alt="" class="rounded-3xl w-full h-72  object-cover">
+                    </div>
+                    <div class="w-full object-cover bg-white img-cover example"></div>
                 </div>
 
-                <div>
+                <div class="example2">
                     <h2 class="font-bold lg:text-2xl text-xl text-blue-900">আমরা অনুশীলন করি INCLUSIVE LEARNING</h2>
 
                     <p class="align mt-5"> পার্ক পলিটেকনিক ইন্সটিটিউট গতানুগতিক ধারার বাইরে একটি আধুনিক পলিটেকনিক, কারণ
@@ -175,7 +218,7 @@
 
 
             <div class="grid lg:grid-cols-2 grid-cols-1 gap-20 mt-16 ">
-                <div>
+                <div class="example2">
                     <h2 class="font-bold lg:text-2xl text-xl text-blue-900">আমাদের রয়েছে HOSTEL ব্যবস্থা</h2>
 
                     <p class="align mt-5"> ড্যাফোডিল পলিটেকনিক ইনস্টিটিউটের রয়েছে ছেলে মেয়েদের জন্য পৃথক নিজস্ব হোস্টেল
@@ -183,7 +226,10 @@
                 </div>
 
                 <div>
-                    <img src="../assets/pic-5.jpg" alt="" class="rounded-3xl w-full h-72  object-cover">
+                    <div>
+                        <img src="../assets/pic-5.jpg" alt="" class="rounded-3xl w-full h-72  object-cover">
+                    </div>
+                    <div class="w-full object-cover bg-white img-cover example"></div>
                 </div>
 
             </div>
@@ -192,10 +238,13 @@
 
             <div class="grid lg:grid-cols-2 grid-cols-1 gap-20 mt-16 ">
                 <div>
-                    <img src="../assets/pic-5.jpg" alt="" class="rounded-3xl w-full h-72  object-cover">
+                    <div>
+                        <img src="../assets/pic-5.jpg" alt="" class="rounded-3xl w-full h-72  object-cover">
+                    </div>
+                    <div class="w-full object-cover bg-white img-cover example"></div>
                 </div>
 
-                <div>
+                <div class="example2">
                     <h2 class="font-bold lg:text-2xl text-xl text-blue-900">একমাত্র আমরাই দিচ্ছি উদ্যোক্তা উন্নয়ন ফান্ড
                     </h2>
 
@@ -218,6 +267,16 @@
 
     <!-- Tailwind CSS JavaScript Code_____________________________________ -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Jquery LInk___________________________ -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(window).scroll(function () {
+            $(".example").addClass("animation2");
+            $(".example2").addClass("animation");
+        });
+
+    </script>
 </body>
 
 </html>

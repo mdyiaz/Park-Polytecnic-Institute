@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notice-Board</title>
+
+
+    <!-- Daisyui Link________________________________________________-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css" rel="stylesheet" type="text/css" />
+
+
+    <!-- Tailwind css Link___________________________________________ -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
+
+
+
+    <!-- fontawesome___________________ -->
+    <script src="https://kit.fontawesome.com/cfa78000ac.js" crossorigin="anonymous"></script>
+
+
+    <style>
+        .align {
+            text-align: justify;
+        }
+
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+
+
+         /* animation for text START__________________ */
+         .animation {
+            position: relative;
+            animation-name: example;
+            animation-duration: 3s;
+        }
+
+        @keyframes example {
+            0% {
+                /* background-color: green; */
+                left: 0px;
+                bottom: -80px;
+            }
+
+            100% {
+                /* background-color: white; */
+                left: 0px;
+                bottom: 0px;
+            }
+        }
+
+        /* animation for text END__________________ */
+    
+
+    </style>
+
+</head>
+
+<body>
+    <div class="mb-10">
+        <div class="bg-[#f2fdfe] lg:p-5 p-5 ">
+            <h2 class="text-center font-semibold text-xl text-blue-900 animation">STUDENT PORTAL</h2>
+            <h2 class="lg:text-4xl text-3xl text-center font-bold mt-2 text-blue-900 animation">NOTICE BOARD</h2>
+            <p class="mt-20 text-sm"><a href="../index.html">Home</a> » <a href="">Notice Board</a></p>
+        </div>
+
+
+        <div class="mt-10 lg:mx-20 mx-10">
+
+            <div class="lg:flex lg:justify-between  content-center">
+                <div class="flex gap-1 mb-5">
+                    <p class="text-lg mt-2 ">Show</p>
+                    <select class="select select-bordered">
+                        <option class="">10</option>
+                        <option>25</option>
+                        <option class="">50</option>
+                        <option>100</option>
+                    </select>
+                    <p class="text-lg mt-2 ">entries</p>
+                </div>
+                <div class="flex gap-2">
+                    <h1 class="mt-2">Search:</h1>
+                    <input type="text" placeholder="Search here" class="input input-bordered w-full max-w-xs" />
+                </div>
+            </div>
+
+
+            <div class="mt-10">
+                <table style="width:100%">
+                    <tr>
+                        <th>Title</th>
+                        <th>Date</th>
+                    </tr>
+                    <tr>
+                        <td class="text-blue-400 p-2">Regarding Foundation Class (Academic Session: 2022-23)</td>
+                        <td>2023/02/19</td>
+                    </tr>
+                    <tr>
+                        <td class="text-blue-400 p-2">রোভার স্কাউট দল গঠন প্রসঙ্গে – ড্যাফোডিল পলিটেকনিক ইন্সটিটিউট</td>
+                        <td class="p-2">2023/02/19</td>
+                    </tr>
+                    <tr>
+                        <td class="text-blue-400 p-2">Diploma in Engineering and Diploma in Tourism Hospitality Management Final Exam Routine November 2021</td>
+                        <td class=" p-2">2023/02/19</td>
+                    </tr>
+
+                    <tr>
+                        <td class="text-blue-400 p-2">মিলাদ ও দোয়া মাহফিল-ড্যাফোডিল পলিটেকনিক</td>
+                        <td class=" p-2">2023/02/19</td>
+                    </tr>
+
+                    <tr>
+                        <td class="text-blue-400 p-2">Holiday Notice: Eid E Milad-un-Nabi (2021)</td>
+                        <td class=" p-2">2023/02/19</td>
+                    </tr>
+
+                    <tr>
+                        <td class="text-blue-400 p-2">ডিপ্লোমা ইন ইঞ্জিনিয়ারিং এর ১ম, ৩য়, ৫ম ও ৭ম পর্বের পরীক্ষার রুটিন</td>
+                        <td class=" p-2">2023/02/19</td>
+                    </tr>
+
+                    <tr>
+                        <td class="text-blue-400 p-2">Diploma in Engineering & Diploma in Tourism and Hospitality Management student’s final examination form fill up Notice September 2021</td>
+                        <td class=" p-2">2023/02/19</td>
+                    </tr>
+
+                    <tr>
+                        <td class="text-blue-400 p-2">Mid Exam, Evaluation Test & Admit Card Collection-Notice</td>
+                        <td class=" p-2">2023/02/19</td>
+                    </tr>
+
+                    <tr>
+                        <td class="text-blue-400 p-2">Diploma in Textile Form Fill Up Notice September 2021</td>
+                        <td class=" p-2">2023/02/19</td>
+                    </tr>
+
+                    <tr>
+                        <td class="text-blue-400 p-2">উত্তরপত্র পুণঃ নিরীক্ষণ</td>
+                        <td class=" p-2">2023/02/19</td>
+                    </tr>
+
+                    <tr>
+                        <td class="text-blue-400 p-2">জন্মাষ্টমী উপলক্ষে ছুটি- ৩০শে আগস্ট</td>
+                        <td class=" p-2">2023/02/19</td>
+                    </tr>
+
+                    <tr>
+                        <td class="text-blue-400 p-2">১ম, ৩য়, ৫ম ও ৭ম পর্বের হাইব্রিড পদ্ধতিতে ক্লাস ও পরীক্ষা গ্রহণ প্রসঙ্গে (২১ আগস্ট ২০২১)</td>
+                        <td class=" p-2">2023/02/19</td>
+                    </tr>
+
+                    <tr>
+                        <td class="text-blue-400 p-2">Readmission Notice for 4th & 6th semester Diploma in Engineering and Diploma in Textile Engineering (August 2021)</td>
+                        <td class=" p-2">2023/02/19</td>
+                    </tr>
+
+                    <tr>
+                        <td class="text-blue-400 p-2">জাতীয় শোক দিবস উপলক্ষ্যে বিভিন্ন প্রোগ্রাম ও প্রতিযোগিতার নিয়মাবলী</td>
+                        <td class=" p-2">2023/02/19</td>
+                    </tr>
+
+                    <tr>
+                        <td class="text-blue-400 p-2">জাতির পিতা বঙ্গবন্ধুর ৪৬ তম শাহাদত বার্ষিকী ও জাতীয় শোক দিবস ২০২১</td>
+                        <td class=" p-2">2023/02/19</td>
+                    </tr>
+
+                    <tr>
+                        <td class="text-blue-400 p-2">অনলাইনে তত্ত্বীয় (Theory) ক্লাস এবং স্বাস্থ্যবিধি মেনে ব্যবহারিক ক্লাস ও রেজিস্ট্রেশন সম্পন্ন করে পরীক্ষায় অংশগ্রহন প্রসঙ্গে।</td>
+                        <td class=" p-2">2023/02/19</td>
+                    </tr>
+
+                    <tr>
+                        <td class="text-blue-400 p-2">প্রথম পর্বের অনলাইন পর্ব মধ্য পরীক্ষা (জুলাই ২০২১) এর অনলাইন রেজাল্ট প্রসঙ্গে</td>
+                        <td class=" p-2">2023/02/19</td>
+                    </tr>
+
+                    <tr>
+                        <td class="text-blue-400 p-2">৫ম এবং ৭ম পর্বের সেমিস্টার ফি প্রদান প্রসঙ্গে</td>
+                        <td class=" p-2">2023/02/19</td>
+                    </tr>
+
+                    <tr>
+                        <td class="text-blue-400 p-2">ডিপ্লোমা স্তরের সকল শিক্ষাক্রমের তত্ত্বীয় ক্লাস এবং ব্যবহারিক ক্লাস ও পরীক্ষা গ্রহণ প্রসঙ্গে</td>
+                        <td class=" p-2">2023/02/19</td>
+                    </tr>
+
+                    <tr>
+                        <td class="text-blue-400 p-2">ডিপ্লোমা অনলাইন ক্লাস শুরুর নোটিশ</td>
+                        <td class=" p-2">2023/02/19</td>
+                    </tr>
+
+                </table>
+            </div>
+
+            <div class="mt-5 flex justify-between">
+                <div>
+                    <p>Showing 1 to 20 of 27 entries</p>
+                </div>
+
+                <div class="flex gap-2">
+                    <p>Previous</p>
+                    <p class="border border-black px-2 bg-gray-200">1</p>
+                    <p>2</p>
+                    <p>Next</p>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    <!-- Tailwind CSS JavaScript Code_____________________________________ -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+     
+</body>
+
+</html>

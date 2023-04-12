@@ -20,6 +20,9 @@
     <script src="https://kit.fontawesome.com/cfa78000ac.js" crossorigin="anonymous"></script>
 
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+
     <style>
        .align {
            text-align: justify;
@@ -28,10 +31,10 @@
 
        .show_bg_2 {
             background-image:
-                linear-gradient(to bottom, rgba(119, 134, 218, 0.541), rgba(173, 64, 146, 0.801)),
-                url('../assets/87ad4de3-0d16-41fb-98af-d3d42d324b52.jpg');
+                linear-gradient(to bottom, rgba(136, 146, 201, 0.541), rgba(238, 240, 108, 0.801)),
+                url('../assets/computer-engineer.jpg');
             width: 100%;
-            height: 200px;
+            height: 100%;
             background-size: cover;
             color: white;
             padding: 20px;
@@ -41,12 +44,61 @@
         .show_bg_3 {
             background-image:
                 linear-gradient(to bottom, rgba(41, 68, 223, 0.644), rgba(192, 28, 151, 0.548)),
-                url('../assets/banner.jpg');
+                url('../assets/87ad4de3-0d16-41fb-98af-d3d42d324b52.jpg');
             width: 100%;
             height: 100%;
             background-size: cover;
             color: white;
             padding: 20px;
+        }
+
+
+
+
+        .slider {
+           /* width: 100%;
+           height: 100vh; */
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           
+        }
+
+        .swiper {
+            /* width: calc(100% - 20%);
+            height: calc(100vh - 4rem); */
+           
+            border-radius: 8px;
+        }
+
+        .swiper-slide > img {
+            /* width: 100%;
+            height: 100%; */
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .swiper-slide {
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .pagination_ {
+            position: absolute;
+            width: calc(100% - 10%);
+        }
+        .pagination_ div[class^="swiper-button"]::after {
+            display: none;
+        }
+
+        .pagination_ div[class^="swiper-button"]{
+            width: 35px;
+            height: 35px;
+            border: 1px solid rgb(75, 75, 75);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
         }
     </style>
 
@@ -55,8 +107,127 @@
     
 
     <div class="mb-10">
-        <div>
-            <img src="../assets/computer-engineer.jpg" alt="" class="w-full h-80 aspect-auto object-fill">
+
+        <div class="show_bg_2">
+            <p class=" text-center bg-[#6682a4] py-14 mb-10 lg:text-4xl text-3xl font-semibold lg:mt-10 mt-5">Polytechnic Diploma Engineering
+                Admission Circular</p>
+        </div>
+
+        <div class="grid lg:grid-cols-3 grid-cols-1 gap-10 mt-10 lg:px-20 px-10">
+            <div class="lg:col-span-2">
+                <h1 class="text-3xl font-bold mb-5 ">Diploma In Computer Engineering Program Objective</h1>
+                <p class="align"> <span class="font-bold">Diploma in Computer Engineering</span> program can be a good choice for your career. Now Computers are an amazing creation of science and technology development. For the last twenty years, the computer industry has been described as the fastest growing industry worldwide. Research has shown that since 1998, most jobs have been created worldwide in computer and computer-related fields. With the development of computer and communication technology, there has been a huge change in the workplace of every government and non-government organization. Therefore, from healthcare to business, educational institutions have created endless opportunities for career building in all fields.</p>
+
+                <p class="mt-5 align">As a result of this globalization, a student now has the opportunity to build a career beyond the borders of the country at the international level. There are lots of <span class="text-blue-500">student consultancy firm in Bangladesh</span>. But its success largely depends on the student’s timely decision. After completing the Diploma in Computer Engineering course at polytechnic institute under Bangladesh Technical Education Board, a student gets ample opportunity to work in various fields including programming, software firm, IT firm, industrial factory in different government and non-government organizations.</p>
+
+                <h1 class="text-3xl font-bold mb-5 mt-5">Diploma in Computer Science & Engineering Course Duration And Assessment</h1>
+                <p class="align">Diploma in computer science and engineering is a 4-year long program consisting of 8 semesters (1 Semester = 6 months). The final and the midterm exams of each semester are conducted under the supervision of the Bangladesh Technical Education Board (BTEB). All the exams question, answer script checking and final results are published by the BTEB. Besides this, each student has to attend the regular class test, quiz test, and semester final project. After successful completion, a student will receive a Diploma Certificate.</p>
+
+                <p class="align mt-5">There are many students who are interested in a diploma in computer science in Bangladesh. If you are one of them, apply for the computer diploma course in Bangladesh now!  The Admission procedure starts after the SSC results. So, you can start a diploma in computer engineering course after 10th. There is mainly one session in a year. Students have to follow the admission announcement which is given by the Bangladesh Technical Education Board Authority. Usually, the admission procedure starts after May (depending on the SSC Result).</p>
+
+                <h1 class="text-3xl font-bold mb-5 mt-5">Career Prospects Of Diploma In Computer Engineering</h1>
+                <p class="align">A four years long Diploma in Computer Engineering is highly valued today, among the young generation for its work/job-oriented approaches, syllabuses. After completing SSC, a student can join in this course and receive the status of a Diploma Engineer, from where they can enter the job field so easily. Daffodil Polytechnic Institute is one of the best private Polytechnic institutes of Bangladesh that provides technical education in Bangladesh with ensuring quality.</p>
+
+                <h1 class="text-3xl font-bold mb-5 mt-5">Career Path</h1>
+                <p class="align">Compare the best computer jobs by employment projections, key growth factors, salary and more, then click the links of your favorite IT career paths for deep dive career profiles featuring skills and responsibilities, desirable certifications, wage analyses, education requirements, training & degree programs, local job openings and tips from IT insiders.</p>
+
+                <h1 class="text-3xl font-bold mb-5 mt-5">Admission Eligibility</h1>
+                <p>Minimum SSC equivalent from any discipline with minimum GPA: 2.00 .</p>
+                <p class="mt-5">HSC (Science) Students can directly join in 3rd Semester</p>
+                <p class="">& HSC (Vocational) students can directly join in 4th Semester.( Passing year 2011, GPA: 2.00 )</p>
+
+
+                <h1 class="text-3xl font-bold mb-5 mt-5">Admission Guidelines</h1>
+                <p>Students are advice to collect admission form the admission office.</p>
+                <p class="mt-5 mb-5">To confirm the admission, students must submit</p>
+                <ul>
+                    <li style="list-style: disc;" class="mt-2">– 4 copy of recent PP size photo</li>
+                    <li style="list-style: disc;" class="mt-2">– Main copy of SSC transcript</li>
+                    <li style="list-style: disc;" class="mt-2">– Photocopy of Parent’s NID Card.</li>
+                    <li style="list-style: disc;" class="mt-2">– Along with the properly filled admission form.</li>
+                    <li style="list-style: disc;" class="mt-2 font-bold">– NOTE: <span>Students will be admitted for the limited seats.</span></li>
+                </ul>
+
+
+                <h1 class="text-3xl font-bold mb-5 mt-5">PPI - Lab Facilities</h1>
+                <ul>
+                    <li style="list-style: disc;" class="mt-2">–  PLC Lab</li>
+                    <li style="list-style: disc;" class="mt-2">– Hardware Lab</li>
+                    <li style="list-style: disc;" class="mt-2">– Computer Lab</li>
+                    <li style="list-style: disc;" class="mt-2">– Networking lab</li>
+                    <li style="list-style: disc;" class="mt-2">– Software lab</li>
+                </ul>
+
+            </div>
+
+            <div>
+                <div class="bg-[#f4f4f4] p-5 ">
+                    <p class="text-lg font-semibold "><a href="../Admission/admissionRequirement.html">Admission Requirements</a></p>
+                    <hr class="mt-3 mb-3">
+
+                    <p class="text-lg font-semibold"><a href="../Admission/ourFacilities.html">Our Facilities</a></p>
+                    <hr class="mt-3 mb-3">
+
+                    <p class="text-lg font-semibold"><a href="../Admission/howToApplyForOnlineAdmission.html">How To Apply</a></p>
+                    <hr class="mt-3 mb-3">
+
+                    <p class="text-lg font-semibold">Brochure</p>
+                    <hr class="mt-3 mb-3">
+
+                    <p class="text-lg font-semibold"><a href="../Admission/tuitionFees.html">Tution Fee</a></p>
+                </div>
+                <button class="btn btn-accent w-full text-white"><a href="../Admission/onlineAdmissionForm.html">Apply Now <i class="fa-solid fa-arrow-right"></i></a></button>
+
+                <div class="show_bg_3 h-72 mt-5 aspect-square object-fill">
+                    <p class="text-2xl font-bold mt-10">Experience The Virtual Campus Tour</p>
+                    <p class="mt-10 text-lg"><a href="">Visit Now <i class="fa-solid fa-arrow-right"></i></a></p>
+                </div>
+
+
+                <div class="bg-[#a6d3f3] p-5 mt-5">
+                    <h1 class="text-2xl font-bold font-serif text-center ">Contact Us</h1>
+                    <p class="mt-3 text-center font-semibold align">Hazi Rafiq Sarak, SahebPara, Signboard, Shiddirgonj,  Narayangonj., Narayanganj, Bangladesh</p>
+
+                    <div class="mt-5 text-center">
+                        <button class="btn glass"><i class="fa-brands fa-facebook text-3xl"></i></button>
+                        <button class="btn glass"><i class="fa-brands fa-whatsapp text-3xl"></i></button>
+                        <button class="btn glass"><i class="fa-solid fa-phone text-3xl"></i></button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="mt-10 lg:px-28 px-10">
+            <section class="slider">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"><img src="../assets/computer-engineer.jpg" alt="" class="w-full"></div>
+                            <div class="swiper-slide"><img src="../assets/computer-engineer.jpg" alt="" class="w-full"></div>
+                            <div class="swiper-slide"><img src="../assets/computer-engineer.jpg" alt="" class="w-full"></div>
+                            <div class="swiper-slide"><img src="../assets/computer-engineer.jpg" alt="" class="w-full"></div>
+                            <div class="swiper-slide"><img src="../assets/computer-engineer.jpg" alt="" class="w-full"></div>
+                            <div class="swiper-slide"><img src="../assets/computer-engineer.jpg" alt="" class="w-full"></div>
+                            <div class="swiper-slide"><img src="../assets/computer-engineer.jpg" alt="" class="w-full"></div>
+                            <div class="swiper-slide"><img src="../assets/computer-engineer.jpg" alt="" class="w-full"></div>
+                            <div class="swiper-slide"><img src="../assets/computer-engineer.jpg" alt="" class="w-full"></div>
+                            <div class="swiper-slide"><img src="../assets/computer-engineer.jpg" alt="" class="w-full"></div>
+                      
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>  
+                    </div>
+                    <div class="pagination_">
+                         <!-- If we need navigation buttons -->
+                         <div class="swiper-button-prev"><i class="fa-solid fa-angle-left"></i></div>
+                         <div class="swiper-button-next"><i class="fa-solid fa-angle-right"></i></div>
+                    </div>
+            </section>
         </div>
 
     </div>
@@ -64,5 +235,46 @@
 
     <!-- Tailwind CSS JavaScript Code_____________________________________ -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+
+<!-- swipperjs script__________________________________________ -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
+    <script>
+          const swiper = new Swiper('.swiper', {
+            speed: 400,
+            spaceBetween:10,
+            slidesPerView:3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable:true 
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // autoplay: {
+            //         delay: 4000,
+            //     },
+
+            breakpoints: {
+                    0: {
+                        slidesPerView: 1,
+                    },
+                    520: {
+                        slidesPerView: 3,
+                    },
+                    768: {
+                        slidesPerView: 4,
+                    },
+                    1000: {
+                        slidesPerView: 5,
+                    }
+                }
+        })
+    </script>
 </body>
 </html>
